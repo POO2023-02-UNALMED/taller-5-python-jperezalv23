@@ -7,6 +7,8 @@ class Animal:
         self.genero = genero
         self.zona = None
 
-        
+    pass
+
+
 
 
