@@ -14,10 +14,10 @@ class Animal:
         Animal._totalAnimales += 1
 
     def toString(self):
-        if self.zona:
-            return f"Mi nombre es {self.nombre}, tengo una edad de {self.edad}, habito en {self.habitat} y mi genero es {self.genero}, la zona en la que me ubico es {self.zona}, en el {self.zona.zoo}"
+        if self._zona:
+            return f"Mi nombre es {self._nombre}, tengo una edad de {self._edad}, habito en {self._habitat} y mi genero es {self._genero}, la zona en la que me ubico es {self._zona}, en el {self._zona._zoo}"
         else:
-            return f"Mi nombre es {self.nombre}, tengo una edad de {self.edad}, habito en {self.habitat} y mi genero es {self.genero}"
+            return f"Mi nombre es {self._nombre}, tengo una edad de {self._edad}, habito en {self._habitat} y mi genero es {self._genero}"
 
     @classmethod
     def totalAnimales(cls):
@@ -25,7 +25,7 @@ class Animal:
     
     @classmethod
     def totalPorTipo(cls):
-        return "Mamiferos: " + cls.mamifero +"\n" + "Aves: " + cls.ave + "\n" + "Reptiles: " + cls.reptil + "\n" + "Peces: " + cls.pez + "\n" + "Anfibios: " + cls.anfibio
+        return "Mamiferos: " + str(cls.mamifero) +"\n" + "Aves: " + str(cls.ave) + "\n" + "Reptiles: " + str(cls.reptil) + "\n" + "Peces: " + str(cls.pez) + "\n" + "Anfibios: " + str(cls.anfibio)
     
     def getNombre(self):
         return self._nombre
