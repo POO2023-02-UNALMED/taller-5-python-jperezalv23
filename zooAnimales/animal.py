@@ -6,11 +6,11 @@ class Animal:
     mamifero = 0
     reptil = 0
     def __init__(self, nombre, edad, habitat, genero):
-        self.nombre = nombre
-        self.edad = edad
-        self.habitat = habitat
-        self.genero = genero
-        self.zona = None
+        self._nombre = nombre
+        self._edad = edad
+        self._habitat = habitat
+        self._genero = genero
+        self._zona = None
         Animal._totalAnimales += 1
 
     def toString(self):
