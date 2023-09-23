@@ -25,7 +25,7 @@ class Animal:
     
     @classmethod
     def totalPorTipo(cls):
-        return "Mamiferos: " + str(cls.mamifero) +"\n" + "Aves: " + str(cls.ave) + "\n" + "Reptiles: " + str(cls.reptil) + "\n" + "Peces: " + str(cls.pez) + "\n" + "Anfibios: " + str(cls.anfibio)
+        return "Mamiferos : " + str(cls.mamifero) +"\n" + "Aves : " + str(cls.ave) + "\n" + "Reptiles : " + str(cls.reptil) + "\n" + "Peces : " + str(cls.pez) + "\n" + "Anfibios : " + str(cls.anfibio)
     
     def getNombre(self):
         return self._nombre
